@@ -12,6 +12,7 @@ URL: 		http://sourceforge.net/projects/mpg321
 Source: 	http://prdownloads.sourceforge.net/mpg321/%name-%version.tar.bz2 
 BuildRequires:	mad-devel >= 0.13 libao-devel >= 0.8.0 perl
 BuildRequires:  libid3tag-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 #Provides:	mpg123
 #Obsoletes:	mpg123
 
