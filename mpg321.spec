@@ -17,7 +17,6 @@ BuildRoot:	%{_tmppath}/%{name}-buildroot
 #Obsoletes:	mpg123
 
 %description
-
 mpg321 is a Free clone of mpg123, a command-line MP3 player. It is designed to
 be a drop-in replacement for mpg123, and therefore its interface has been
 designed around that of mpg123, without using any of its code. mpg321 has been
