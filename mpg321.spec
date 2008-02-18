@@ -1,6 +1,6 @@
 %define name mpg321
 %define version 0.2.10
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary:	Mpg123-clone
 Name:		%{name}
