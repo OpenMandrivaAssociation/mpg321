@@ -2,7 +2,7 @@
 %define version 0.2.10
 %define release %mkrel 6
 
-Summary:	Free mpg123-clone
+Summary:	Mpg123-clone
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
