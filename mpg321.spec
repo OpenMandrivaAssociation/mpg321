@@ -1,20 +1,17 @@
-%define name mpg321
-%define version 0.2.10
-%define release %mkrel 7
-
 Summary:	Mpg123-clone
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		mpg321
+Version:	0.2.10
+Release:	%mkrel 8
 Group:		Sound
 License:	GPL
 URL: 		http://sourceforge.net/projects/mpg321
 Source: 	http://prdownloads.sourceforge.net/mpg321/%name-%version.tar.bz2 
+Patch0:		mpg321-help.patch
 BuildRequires:	mad-devel >= 0.13 libao-devel >= 0.8.0 perl
 BuildRequires:  libid3tag-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 #Provides:	mpg123
 #Obsoletes:	mpg123
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mpg321 is a Free clone of mpg123, a command-line MP3 player. It is designed to
@@ -26,8 +23,10 @@ recompiling, and it does all MP3 decoding with only fixed-point math by using
 the mad MPEG audio decoder library.
 	
 %prep
-rm -rf $RPM_BUILD_ROOT
+
 %setup -q
+%patch0 -p0
+
 #fix path in man page
 perl -pi -e "s!/usr/share/doc/mpg321!/usr/share/doc/mpg321-%{version}!" mpg321.1
 
