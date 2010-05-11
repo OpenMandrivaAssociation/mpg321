@@ -1,13 +1,14 @@
 Summary:	Mpg123-clone
 Name:		mpg321
 Version:	0.2.11
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		Sound
 License:	GPL
 URL: 		http://sourceforge.net/projects/mpg321
 Source: 	http://prdownloads.sourceforge.net/mpg321/%name-%version.tar.gz
 Patch0:		mpg321-help.patch
 Patch1:		mpg321-0.2.11-fix-str-fmt.patch
+Patch2:		mpg321-0.2.11-set-channel-mapping.patch
 BuildRequires:	mad-devel >= 0.13 libao-devel >= 0.8.0 perl
 BuildRequires:  libid3tag-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -25,6 +26,7 @@ the mad MPEG audio decoder library.
 %setup -qn %name
 %patch0 -p0
 %patch1 -p0
+%patch2 -p1
 
 #fix path in man page
 perl -pi -e "s!/usr/share/doc/mpg321!/usr/share/doc/mpg321-%{version}!" mpg321.1
