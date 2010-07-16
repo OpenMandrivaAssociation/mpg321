@@ -1,13 +1,13 @@
 Summary:	Mpg123-clone
 Name:		mpg321
-Version:	0.2.11
-Release:	%mkrel 3
+Version:	0.2.12
+Release:	%mkrel 1
 Group:		Sound
 License:	GPL
 URL: 		http://sourceforge.net/projects/mpg321
-Source: 	http://prdownloads.sourceforge.net/mpg321/%name-%version.tar.gz
+Source: 	http://kent.dl.sourceforge.net/project/mpg321/mpg321/%version/%name-%version-1.tar.gz
 Patch0:		mpg321-help.patch
-Patch1:		mpg321-0.2.11-fix-str-fmt.patch
+Patch1:		mpg321-0.2.12-fix-str-fmt.patch
 Patch2:		mpg321-0.2.11-set-channel-mapping.patch
 BuildRequires:	mad-devel >= 0.13 libao-devel >= 0.8.0 perl
 BuildRequires:  libid3tag-devel
@@ -23,23 +23,19 @@ recompiling, and it does all MP3 decoding with only fixed-point math by using
 the mad MPEG audio decoder library.
 	
 %prep
-%setup -qn %name
+%setup -qn %name-%version-1
 %patch0 -p0
 %patch1 -p0
 %patch2 -p1
 
-#fix path in man page
-perl -pi -e "s!/usr/share/doc/mpg321!/usr/share/doc/mpg321-%{version}!" mpg321.1
-
 %build
-
 %configure2_5x --enable-mpg123-symlink=no # Uncomment option once mainstream.
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
