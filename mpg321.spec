@@ -12,7 +12,7 @@ Patch2:		mpg321-0.2.11-set-channel-mapping.patch
 BuildRequires:	mad-devel >= 0.13 
 BuildRequires:	libao-devel >= 0.8.0
 BuildRequires:	libid3tag-devel
-BuildRequires:	libalsa-plugins
+BuildRequires:	libasound-devel
 
 %description
 mpg321 is a Free clone of mpg123, a command-line MP3 player. It is designed to
