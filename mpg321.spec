@@ -10,7 +10,7 @@ Patch0:		mpg321-help.patch
 Patch1:		mpg321-0.2.12-fix-str-fmt.patch
 Patch2:		mpg321-0.2.11-set-channel-mapping.patch
 BuildRequires:	mad-devel >= 0.13 
-BuildRequires:	libao-devel >= 0.8.0 perl
+BuildRequires:	libao-devel >= 0.8.0
 BuildRequires:	libid3tag-devel
 
 %description
