@@ -1,0 +1,20 @@
+--- mpg321.c.str	2010-07-16 18:46:43.000000000 +0200
++++ mpg321.c	2010-07-16 18:47:40.000000000 +0200
+@@ -238,7 +238,7 @@
+         {
+             if(!names[i])
+             {
+-                printf(emptystring);
++                printf("%s",emptystring);
+             }
+             
+             else
+@@ -256,7 +256,7 @@
+         for (i=0; i<=5; i++)    {
+             fprintf (stderr, "%s", info_id3[i].name);
+             if (!names[i])  {
+-                fprintf (stderr, emptystring);
++                fprintf (stderr, "%s", emptystring);
+             }   else    {
+                 fprintf (stderr, "%s", names[i]);
+                 free (names[i]);

@@ -1,0 +1,11 @@
+--- mpg321.c.orig	2007-06-01 09:34:50.000000000 +0200
++++ mpg321.c	2009-11-15 12:10:47.000000000 +0100
+@@ -105,7 +105,7 @@
+         "   --skip N or -k N         Skip N frames into the file\n"
+         "   --frames N or -n N       Play only the first N frames\n"
+         "   -o dt                    Set output devicetype to dt\n" 
+-        "                                [esd,alsa(09),arts,sun,oss]\n"
++        "                                [pulse,esd,alsa(09),arts,sun,oss]\n"
+         "   --audiodevice N or -a N  Use N for audio-out\n"
+         "   --stdout or -s           Use stdout for audio-out\n"
+         "   --au N                   Use au file N for output\n"
