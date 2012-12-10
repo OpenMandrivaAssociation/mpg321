@@ -43,3 +43,68 @@ sed -i 's/\r//' NEWS
 %doc BUGS AUTHORS HACKING NEWS README* THANKS TODO
 %{_mandir}/man1/*
 %{_bindir}/*
+
+
+%changelog
+* Tue Apr 10 2012 Johnny A. Solbu <solbu@mandriva.org> 0.3.2-1
++ Revision: 790117
+- Update BuildRequires
+- New version
+- Spec cleanup
+- Don't ship COPYING, license doesn't require it
+
+* Fri Jul 16 2010 Funda Wang <fwang@mandriva.org> 0.2.12-1mdv2011.0
++ Revision: 554412
+- new version 0.2.12
+
+* Tue May 11 2010 Pascal Terjan <pterjan@mandriva.org> 0.2.11-3mdv2010.1
++ Revision: 544471
+- Set a channel mapping to avoid crash on recent libao (#59019)
+
+* Sun Mar 28 2010 Funda Wang <fwang@mandriva.org> 0.2.11-2mdv2010.1
++ Revision: 528369
+- rebuild
+
+* Sun Nov 15 2009 Funda Wang <fwang@mandriva.org> 0.2.11-1mdv2010.1
++ Revision: 466207
+- new version 0.2.11
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tv@mandriva.org> 0.2.10-10mdv2009.0
++ Revision: 252961
+- rebuild
+
+* Tue Mar 25 2008 Oden Eriksson <oeriksson@mandriva.com> 0.2.10-8mdv2008.1
++ Revision: 189862
+- fix #37847 (mpg321 doesn't list pulseaudio output)
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 0.2.10-7mdv2008.1
++ Revision: 170988
+- rebuild
+- summary is not licence tag
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+- fix spacing at top of description
+
+* Thu Jan 03 2008 Olivier Blin <blino@mandriva.org> 0.2.10-6mdv2008.1
++ Revision: 140963
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Thu Jan 11 2007 Götz Waschk <waschk@mandriva.org> 0.2.10-6mdv2007.0
++ Revision: 107459
+- Import mpg321
+
+* Thu Jan 11 2007 Götz Waschk <waschk@mandriva.org> 0.2.10-6mdv2007.1
+- Rebuild
+
+* Fri Oct 07 2005 Lenny Cartier <lenny@mandriva.com> 0.2.10-5mdk
+- rebuild
+
+* Fri Jul 23 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.2.10-4mdk
+- rebuild
+
