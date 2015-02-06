@@ -1,7 +1,7 @@
 Summary:	Mpg123-clone
 Name:		mpg321
 Version:	0.3.2
-Release:	1
+Release:	2
 Group:		Sound
 License:	GPLv2+
 URL:		http://sourceforge.net/projects/mpg321
