@@ -4,7 +4,7 @@ Version:	0.3.2
 Release:	2
 Group:		Sound
 License:	GPLv2+
-URL:		http://sourceforge.net/projects/mpg321
+URL:		https://sourceforge.net/projects/mpg321
 Source:		http://downloads.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 Patch0:		mpg321-help.patch
 Patch1:		mpg321-0.2.12-fix-str-fmt.patch
