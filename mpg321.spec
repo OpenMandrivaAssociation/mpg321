@@ -9,6 +9,11 @@ Source:		http://downloads.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 Patch0:		mpg321-help.patch
 Patch1:		mpg321-0.2.12-fix-str-fmt.patch
 Patch2:		mpg321-0.2.11-set-channel-mapping.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mad-devel >= 0.13 
 BuildRequires:	libao-devel >= 0.8.0
 BuildRequires:	libid3tag-devel
